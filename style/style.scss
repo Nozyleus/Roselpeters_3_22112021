@@ -3,3 +3,69 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: roboto, sans-serif;
+  }
+
+@media screen and (max-width: 450px)
+{
+
+header {
+ border-bottom: solid 2px rgb(172, 172, 172);
+}
+.container__logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+   
+}
+
+section {
+    display: flex;
+}
+
+.container__position {
+    flex-wrap: wrap;
+    background: rgba(212, 209, 209, 0.287);
+}
+
+.position {
+    display: flex;
+    margin: 0 80px;
+    padding: 10px;
+}
+.fa-map-marker-alt {
+    font-size: 17px;
+    padding: 0.1em;
+    margin: 4px 5px;
+}
+.position__town {
+    font-size: 18px;
+    padding: 0.3em;
+}
+
+.container__announce {
+    background-color: rgb(246, 253, 255);
+}
+
+.announce__reservation {
+    text-align: center;
+    margin: 45px ;
+}
+
+.announce__pub {
+    text-align: center;
+    margin: 30px;
+    font-size: 16px;
+    padding-top: 1px;
+}
+
+.explorer__btn {
+    background-color: cornsilk;
+    border-radius: 50px;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+}
+}
