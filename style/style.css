@@ -62,11 +62,16 @@ body {
     padding-top: 1px;
   }
   .explorer__btn {
-    background-color: cornsilk;
+    background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
+    background: linear-gradient(to top left, #9356dc, #ff79da);
     border-radius: 50px;
     margin: 30px;
     padding: 20px;
     text-align: center;
+  }
+  .explorer__link {
+    text-decoration: none;
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
