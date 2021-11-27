@@ -79,5 +79,14 @@ body {
     font-size: 0.9em;
     font-weight: bold;
   }
+  /* RESTAURANT */
+  .menu__restaurant {
+    padding: 20px;
+  }
+  .img__resto {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /*# sourceMappingURL=style.css.map */
