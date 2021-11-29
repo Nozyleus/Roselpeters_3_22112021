@@ -81,12 +81,29 @@ section {
     font-weight: bold; 
   }
                           /* RESTAURANT */
-.menu__restaurant {
-    padding: 20px;
-    
+.menu__restaurant{
+    width: 90%;
+    margin: 0 25px;
+    border-radius: 15px;
+    box-shadow: 2px  5px #9356dc;    
 }
-.img__resto {
+
+.container__img__resto {
+    display: flex;
+    position: relative;
+}
+
+.container__img__resto .new__plat {
+   background-color: aquamarine;
+   position: absolute;
+   text-align: center;
+   margin: 0;
+   z-index: 1; 
+}
+
+.img__plat {
     width: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
 }
