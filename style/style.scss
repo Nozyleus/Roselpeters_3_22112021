@@ -1,7 +1,4 @@
-$purplecolor:  #9356dc;
-$pinkcolor: #ff79da;
-$greencolor: #99E2D0;
-
+@import "../libs/mixins.scss";
 
 *{
     margin: 0;
@@ -76,8 +73,12 @@ section {
     background: linear-gradient(to top left, $purplecolor ,$pinkcolor );
     border-radius: 50px;
     margin: 20px;
-    padding: 15px;
+    padding: 15px ;
     text-align: center;
+}
+
+.explorer__btn:hover {
+    background: linear-gradient(to top left,#bb95e9,#f89bde  );
 }
 .explorer__link {
     text-decoration: none;
@@ -114,9 +115,13 @@ section {
       
   }
 
-  .fa__function{
+  .fa__icon{
       font-size: 1em;
       margin: 0 50px;
+  }
+
+  .fa__icon:hover {
+    color: $purplecolor;
   }
 
   .function__title {
@@ -156,14 +161,17 @@ section {
 .img__plat {
     width: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
 }
 
 .info__restaurant {
-    display: flex;
+    margin: 10px;
+}
+
+.title__plat {
+    font-weight: bold;
 }
 .fa-heart {
-    align-items: flex-end;
-    
+    margin: 0 300px 0 ;
 }
 }

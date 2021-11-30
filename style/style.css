@@ -73,6 +73,10 @@ body {
     padding: 15px;
     text-align: center;
   }
+  .explorer__btn:hover {
+    background: -webkit-gradient(linear, right bottom, left top, from(#bb95e9), to(#f89bde));
+    background: linear-gradient(to top left, #bb95e9, #f89bde);
+  }
   .explorer__link {
     text-decoration: none;
     color: white;
@@ -109,9 +113,12 @@ body {
     padding: 5px 10px;
     margin: -30px;
   }
-  .fa__function {
+  .fa__icon {
     font-size: 1em;
     margin: 0 50px;
+  }
+  .fa__icon:hover {
+    color: #9356dc;
   }
   .function__title {
     font-weight: bold;
@@ -149,17 +156,16 @@ body {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
   }
   .info__restaurant {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin: 10px;
+  }
+  .title__plat {
+    font-weight: bold;
   }
   .fa-heart {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    margin: 0 300px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
