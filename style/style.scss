@@ -1,4 +1,7 @@
-@import "style/mixins.scss";
+$purplecolor:  #9356dc;
+$pinkcolor: #ff79da;
+$greencolor: #99E2D0;
+
 
 *{
     margin: 0;
@@ -70,7 +73,7 @@ section {
 }
 
 .explorer__btn {
-    background: linear-gradient(to top left, #9356dc, #ff79da);
+    background: linear-gradient(to top left, $purplecolor ,$pinkcolor );
     border-radius: 50px;
     margin: 20px;
     padding: 15px;
@@ -141,7 +144,7 @@ section {
 }
 
 .container__img__resto .new__plat {
-   background-color: #99E2D0;
+   background-color: $greencolor;
    color: #1b5a4a;
    position: absolute;
    text-align: center;
@@ -154,5 +157,13 @@ section {
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+.info__restaurant {
+    display: flex;
+}
+.fa-heart {
+    align-items: flex-end;
+    
 }
 }

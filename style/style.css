@@ -151,5 +151,15 @@ body {
        object-fit: cover;
     border-radius: 15px;
   }
+  .info__restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fa-heart {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 /*# sourceMappingURL=style.css.map */
