@@ -38,9 +38,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    position: relative;
+    margin: 0 20%;
     padding: 10px;
   }
   .fa-map-marker-alt {
@@ -74,7 +73,7 @@ body {
     background: linear-gradient(to top left, #9356dc, #ff79da);
     border-radius: 50px;
     margin: 20px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
   }
   .explorer__btn:hover {
@@ -84,7 +83,7 @@ body {
   .explorer__link {
     text-decoration: none;
     color: white;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: bold;
   }
   /*fonctionnement*/
@@ -141,7 +140,7 @@ body {
     background-color: #f1f1f1;
   }
   .title__restaurants {
-    padding: 30px 10px;
+    padding: 25px 20px;
     font-size: 1.4em;
   }
   .menu__restaurant {
@@ -189,7 +188,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 10px;
+    margin: 10px 10px;
   }
   .name__restaurant {
     font-size: 17px;
@@ -198,34 +197,45 @@ body {
   }
   .fa-heart {
     position: relative;
-    margin: -40px 280px;
+    margin: -35px 280px;
     font-size: 25px;
   }
   /*footer*/
   .footer__index {
     background-color: black;
     color: white;
+    height: 220px;
   }
   .container__sous__title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 10px 0;
   }
   .title__site {
     padding: 20px;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: shrikhand;
     color: white;
   }
   .fa__footer {
+    font-size: 1em;
+    margin: 0 20px;
     color: white;
+  }
+  .fas__footer {
+    margin: 0 16px;
   }
   .sous__title {
     color: white;
+    font-size: 1em;
+  }
+  .legal {
+    margin: 0 20px;
+    padding: 5px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
