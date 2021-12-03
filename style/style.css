@@ -12,7 +12,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  header {
+  .head {
     border-bottom: solid 2px #acacac;
   }
   .container__logo {
@@ -195,7 +195,7 @@ body {
     font-weight: bold;
     margin: 3px 0;
   }
-  .fa-heart {
+  .heart__restaurant {
     position: relative;
     margin: -35px 280px;
     font-size: 25px;
@@ -236,6 +236,42 @@ body {
   .legal {
     margin: 0 20px;
     padding: 5px 0;
+  }
+  /*  pages RESTAURANTS */
+  .container__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .title__app {
+    font-family: shrikhand;
+  }
+  .fa-arrow-left {
+    font-size: 20px;
+  }
+  .img__fiche__resto {
+    width: 105%;
+  }
+  .container__restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .title__restaurant {
+    font-family: shrikhand;
+  }
+  .heart__menu {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
