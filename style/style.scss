@@ -286,21 +286,44 @@ section {
 
 .img__fiche__resto {
     width: 105%;  
+
 }
 
-.container__restaurant {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px 0;
-}
 
 .title__restaurant {
+    font-size: 25px;
     font-family: shrikhand;
+    margin: 15px ;
+    padding:50px 0;
+}
+
+.container__heart {
+    display: flex;
 }
 .heart__menu {
-    font-size: 25px;
+    position: absolute;
+    margin:  0 0 0 250px ;
+    padding: 0 55px ;
+    font-size: 25px; 
+    top: 50px;
 }
+
+.heart2__menu {
+    position: absolute;
+    margin:15px 0 0 250px;
+    padding: 0 55px;
+    font-size: 25px;
+    color: transparent;
+    transform: scale(1);
+    top: 35px;
+    &:hover {
+        transform: scale(1.07);
+        color: violet;
+        transition: 0.4s;
+    } 
+}
+
+
 .card__restaurant {
     position: relative;
     margin:-60px 0;
@@ -308,14 +331,16 @@ section {
     border-radius: 45px 45px 0 0;
 }
 
-
+.container__entrees{
+    margin: 15px;
+}
 
 .descri__plat {
     background-color: white;
     border-radius: 20px;
     box-shadow: rgb(180, 180, 180) 1px 1px 1px ;
-    width: 92%;
-    margin: 10px 10px 10px 10px;
+    width: 100%;
+    margin: 10px 0 ;
     padding: 15px 0;
 }
 
