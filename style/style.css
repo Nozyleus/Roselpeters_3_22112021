@@ -79,6 +79,8 @@ body {
   .explorer__btn:hover {
     background: -webkit-gradient(linear, right bottom, left top, from(#bb95e9), to(#f89bde));
     background: linear-gradient(to top left, #bb95e9, #f89bde);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .explorer__link {
     text-decoration: none;
@@ -137,6 +139,7 @@ body {
   }
   /* RESTAURANT */
   .presentation__restaurant {
+    display: block;
     background-color: #f1f1f1;
   }
   .title__restaurants {
@@ -165,7 +168,7 @@ body {
     color: #1b5a4a;
     position: absolute;
     text-align: center;
-    margin: 15px 250px;
+    margin: 10px 250px;
     padding: 8px;
     font-size: 14px;
     font-weight: bold;
@@ -195,10 +198,27 @@ body {
     font-weight: bold;
     margin: 3px 0;
   }
-  .heart__restaurant {
+  .rating {
     position: relative;
     margin: -35px 280px;
-    font-size: 25px;
+  }
+  .far {
+    font-size: 22px;
+  }
+  .heart {
+    position: absolute;
+    font-size: 22px;
+    top: 0;
+    color: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .heart:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    color: violet;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
   /*footer*/
   .footer__index {
