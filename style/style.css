@@ -11,6 +11,97 @@ body {
   font-family: roboto, sans-serif;
 }
 
+/*LOADER*/
+#loader {
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_loader {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.883);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: 5s load;
+          animation: 5s load;
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.fa-carrot {
+  color: #ff79da;
+  font-size: 55px;
+  margin: 20px;
+}
+
+.fa-lemon {
+  color: #9356dc;
+  font-size: 55px;
+}
+
+.fa-pepper-hot {
+  color: #99E2D0;
+  font-size: 55px;
+  margin: 20px;
+}
+
 @media screen and (max-width: 450px) {
   .head {
     border-bottom: solid 2px #acacac;
