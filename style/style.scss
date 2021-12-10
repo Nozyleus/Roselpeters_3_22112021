@@ -14,47 +14,27 @@ body {
   
                                              /*LOADER*/
 #loader {
-    animation: spin 4s linear infinite;
+    animation: spin 3s ease ;
+    animation-fill-mode: forwards;
     position:fixed;
+    z-index: 1;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
+   background-color: rgba(255, 255, 255, 0.9);
+   pointer-events: none;
 }
 
-.container_loader {
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.883);
-    width: 100%;
-    height: 100%;
-    animation: 5s load ;
-    transition: 3s linear;
-    animation-fill-mode:  forwards;
-}
 
-@keyframes load {
-    0% {
+@keyframes spin {
+    99%{
+        transform: rotate(360deg);
         opacity: 1;
     }
     100%{
         opacity: 0;
-       
-    }
-    
-}
-
-@keyframes spin {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg,);
     
     }
 }
@@ -288,10 +268,6 @@ section {
     } 
 }
 
-
-
-
-
                          /*footer*/
 
 .footer__index {
@@ -338,15 +314,17 @@ section {
 .container__head {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
 .title__app {
     font-family: shrikhand;
+    padding: 0 45px;
+    margin: 15px;
 }
 
 .fa-arrow-left {
-    font-size: 20px;
+    font-size: 20px; 
+    margin: 0 20px;
 }
 
 .img__fiche__resto {
@@ -356,10 +334,11 @@ section {
 
 
 .title__restaurant {
-    font-size: 25px;
+    font-size: 27px;
     font-family: shrikhand;
-    margin: 15px ;
-    padding:50px 0;
+    font-weight: lighter;
+    margin: 0 20px ;
+    padding:40px 0;
 }
 
 .container__heart {
@@ -368,19 +347,19 @@ section {
 .heart__menu {
     position: absolute;
     margin:  0 0 0 250px ;
-    padding: 0 55px ;
+    padding: 0 80px ;
     font-size: 25px; 
-    top: 50px;
+    top: 40px;
 }
 
 .heart2__menu {
     position: absolute;
     margin:15px 0 0 250px;
-    padding: 0 55px;
+    padding: 0 80px;
     font-size: 25px;
     color: transparent;
     transform: scale(1);
-    top: 35px;
+    top: 25px;
     &:hover {
         transform: scale(1.07);
         color: violet;
@@ -407,6 +386,25 @@ section {
     width: 100%;
     margin: 10px 0 ;
     padding: 15px 0;
+}
+
+.title__menu {
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 5px 0 ;
+    width: 10%;
+    border-bottom: 3px solid $greencolor;
+}
+
+.container_title_plat {
+    margin: 0 10px;
+    display: grid;
+    
+}
+
+.title__plat {
+    font-weight: bold;
+   
 }
 
 }
