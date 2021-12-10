@@ -386,6 +386,8 @@ body {
     margin: 15px;
   }
   .descri__plat {
+    display: -ms-grid;
+    display: grid;
     background-color: white;
     border-radius: 20px;
     -webkit-box-shadow: #b4b4b4 1px 1px 1px;
