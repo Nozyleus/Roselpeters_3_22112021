@@ -13,6 +13,27 @@ body {
   }
   
                                              /*LOADER*/
+.container_loader {
+    background-color: rgba(248, 246, 246, 0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    animation: backloader 3s;
+    animation-fill-mode: forwards;
+    position: fixed;
+    pointer-events: none;
+}
+
+@keyframes backloader {
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 #loader {
     animation: spin 3s ease ;
     animation-fill-mode: forwards;
@@ -23,8 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   background-color: rgba(255, 255, 255, 0.9);
-   pointer-events: none;
+    pointer-events: none;
 }
 
 
@@ -311,6 +331,8 @@ section {
 }
 
 /*  pages RESTAURANTS */
+
+
 .container__head {
     display: flex;
     align-items: center;
@@ -399,7 +421,7 @@ section {
 
 .container_title_plat {
     margin: 0 10px;
-    display: grid;
+    
     
 }
 
@@ -408,4 +430,25 @@ section {
    
 }
 
+.fa-check-circle {
+    color: white;
+    background-color: $greencolor;
+    font-size: 50px;
+    margin: 0 50px;
+    &:hover{
+        animation: ok 2s ease  ;
+        right: 100%;
+        
+    
+    @keyframes ok {
+        0%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+        
+    }}
+    
+}
 }
