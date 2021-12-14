@@ -165,8 +165,8 @@ body {
     background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
     background: linear-gradient(to top left, #9356dc, #ff79da);
     border-radius: 50px;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 15px;
     text-align: center;
   }
   .explorer__btn:hover {
@@ -317,7 +317,6 @@ body {
   .footer__index {
     background-color: black;
     color: white;
-    height: 220px;
   }
   .container__sous__title {
     display: -webkit-box;
@@ -362,14 +361,13 @@ body {
   .title__app {
     font-family: shrikhand;
     padding: 0 45px;
-    margin: 15px;
   }
   .fa-arrow-left {
     font-size: 20px;
     margin: 0 20px;
   }
   .img__fiche__resto {
-    width: 105%;
+    width: 100%;
   }
   .title__restaurant {
     font-size: 27px;
@@ -385,20 +383,20 @@ body {
   }
   .heart__menu {
     position: absolute;
-    margin: 0 0 0 250px;
+    margin: 0 0 0 200px;
     padding: 0 80px;
     font-size: 25px;
-    top: 40px;
+    top: 45px;
   }
   .heart2__menu {
     position: absolute;
-    margin: 15px 0 0 250px;
+    margin: 0 0 0 200px;
     padding: 0 80px;
     font-size: 25px;
     color: transparent;
     -webkit-transform: scale(1);
             transform: scale(1);
-    top: 25px;
+    top: 45px;
   }
   .heart2__menu:hover {
     -webkit-transform: scale(1.07);
@@ -409,23 +407,12 @@ body {
   }
   .card__restaurant {
     position: relative;
-    margin: -60px 0;
     background-color: #f5f5f5;
     border-radius: 45px 45px 0 0;
+    margin-top: -50px;
   }
   .container__entrees {
     margin: 15px;
-  }
-  .descri__plat {
-    display: -ms-grid;
-    display: grid;
-    background-color: white;
-    border-radius: 20px;
-    -webkit-box-shadow: #b4b4b4 1px 1px 1px;
-            box-shadow: #b4b4b4 1px 1px 1px;
-    width: 100%;
-    margin: 10px 0;
-    padding: 15px 0;
   }
   .title__menu {
     font-size: 15px;
@@ -434,22 +421,70 @@ body {
     width: 10%;
     border-bottom: 3px solid #99E2D0;
   }
+  .descri__plat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: rgba(180, 180, 180, 0.514) 2px 2px 2px 2px;
+            box-shadow: rgba(180, 180, 180, 0.514) 2px 2px 2px 2px;
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+  }
   .container_title_plat {
+    padding: 15px 0;
     margin: 0 10px;
   }
   .title__plat {
     font-weight: bold;
+    font-size: 17px;
+    margin: 5px 0;
+  }
+  .container_price {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 45px 15px 0;
+    font-size: 14px;
+  }
+  .acc {
+    font-size: 14px;
+  }
+  .price {
+    font-weight: bold;
+  }
+  .circle {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40px;
+    margin-right: -30px;
+    border-radius: 0 25px 25px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #99E2D0));
+    background: linear-gradient(to left, transparent 50%, #99E2D0 50%);
+  }
+  .container__coeur {
+    overflow: hidden;
+  }
+  .descri__plat:hover .circle {
+    margin-right: 0;
+    width: 100px;
   }
   .fa-check-circle {
     color: white;
-    background-color: #99E2D0;
-    font-size: 50px;
-    margin: 0 50px;
+    font-size: 20px;
+    margin: 15px;
   }
   .fa-check-circle:hover {
-    -webkit-animation: ok 2s ease;
-            animation: ok 2s ease;
-    right: 100%;
+    -webkit-animation: ok 0.5s ease;
+            animation: ok 0.5s ease;
   }
   @-webkit-keyframes ok {
     0% {
@@ -470,6 +505,24 @@ body {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
     }
+  }
+  .container_commande {
+    padding: 5px 20px;
+    margin: 30px 100px;
+    width: 50%;
+    background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
+    background: linear-gradient(to top left, #9356dc, #ff79da);
+    border-radius: 50px;
+  }
+  .container_commande:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .commander {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 0 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
