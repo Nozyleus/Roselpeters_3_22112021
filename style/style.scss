@@ -156,7 +156,15 @@ section {
     font-size: 0.9rem;
     font-weight: bold; 
   }
+
+
+
+
                               /*fonctionnement*/
+
+
+
+
   .container__function {
       margin:50px 20px ;
   }
@@ -176,7 +184,15 @@ section {
   }
   .container__function__nav:hover {
       background-color: #f7f0ff;
+      
   }
+.container__function__nav:hover {
+    .fa__icon {
+        color: $purplecolor;
+
+      }
+}
+
 
   .function__number {
       align-items: flex-start;
@@ -194,18 +210,19 @@ section {
       font-size: 1em;
       margin: 0 50px;
   }
-
-  .fa__icon:hover {
-    color: $purplecolor;
-  }
-
   .function__title {
       font-weight: bold;
       font-size: 1.1em;
       padding: 10px;
       margin:0 -30px 0;
   }
+
+
+
                           /* RESTAURANT */
+
+
+
 .presentation__restaurant {
     display: block;
     background-color: #f1f1f1;
@@ -280,19 +297,26 @@ section {
     top: 0;
     color: transparent;
     transform: scale(1);
-    
-    &:hover {
+}
+
+.menu__restaurant:hover {
+    .heart{
         transform: scale(1.2);
         color: violet;
         transition: 0.4s;
     } 
 }
 
+
+
                          /*footer*/
+
+
 
 .footer__index {
     background-color: black;
     color: white;
+    height: 200px;
     
     
 }
@@ -328,9 +352,16 @@ section {
 .legal {
     margin: 0 20px;
     padding: 5px 0;
+    color: white;
+    text-decoration: none;
 }
 
-/*  pages RESTAURANTS */
+
+
+                                    /*  pages RESTAURANTS */
+
+
+
 
 
 .container__head {
@@ -367,16 +398,14 @@ section {
 }
 .heart__menu {
     position: absolute;
-    margin:  0 0 0 200px ;
-    padding: 0 80px ;
+    margin:  0 0 0 80% ;
     font-size: 25px; 
     top: 45px;
 }
 
 .heart2__menu {
     position: absolute;
-    margin: 0 0 0 200px;
-    padding: 0 80px;
+    margin: 0 0 0 80%;
     font-size: 25px;
     color: transparent;
     transform: scale(1);
@@ -417,18 +446,35 @@ section {
     width: 100%;
     margin: 10px 0 ;
     overflow: hidden;
-   
+    animation-duration: 2.5s;
+    animation-delay: 0.5s;
+    animation-name: plat;
+    @keyframes plat {
+        from {
+          margin-top: 90%;
+          width: 100%;
+          opacity: 0;
+        }
+      
+        to {
+          margin-top: 1%;
+          width: 100%;
+          opacity: 1;
+        }
+    }
 }
 .container_title_plat {
     padding: 15px 0; 
     margin: 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .title__plat {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     margin: 5px 0;
-   
 }
 
 .container_price{
@@ -453,7 +499,7 @@ section {
     display: grid;
     align-items: center;
     width: 40px;
-    margin-right: -30px;
+    margin-right: -40px;
     border-radius: 0 25px 25px 0;
     transition: 0.5s;
     background: linear-gradient(to left, transparent 50%, $greencolor 50%);
@@ -464,17 +510,10 @@ section {
 }
 .descri__plat:hover{
     .circle{
-         
-        margin-right: 0;
+        margin-right: -50px;
         width: 100px;
-    
     }
-}
-.fa-check-circle {
-    color: white;
-    font-size: 20px;
-    margin: 15px;
-    &:hover {
+    .fa-check-circle {
         animation: ok 0.5s ease ;
     @keyframes ok{
         0%{
@@ -486,6 +525,12 @@ section {
         
     }
 }
+}
+.fa-check-circle {
+    color: white;
+    font-size: 20px;
+    margin: 15px;
+   
     
 }
 .container_commande {
