@@ -100,7 +100,7 @@ body {
 //////////////////////* smartphone*\\\\\\\\\\\\\\\\\\\\\\\\\\
 //////////////////                 \\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-                  @media screen and (max-width: 450px)
+                  @media screen and (max-width: 799px)
 {
 
 
@@ -576,7 +576,7 @@ section {
 
                    //////////////////*TAblette*/////////////////
 ////////////////////                                            /////////////////////////
-                     @media screen and (min-width: 451px) and(max-width: 1200px){
+                     @media screen and (min-width: 800px) and(max-width: 1200px){
 
 .head {
     border-bottom: solid 2px rgb(172, 172, 172);
@@ -587,9 +587,7 @@ section {
     margin: 20px;
                               
 }
-section {
-    display: flex;
-    }
+
 .container__position {
     flex-wrap: wrap;
     background: rgba(212, 209, 209, 0.287);
@@ -597,7 +595,7 @@ section {
                            
 .position {
     display: flex;
-justify-content: space-between;
+justify-content: center;
 }
 .fa-map-marker-alt {
     font-size: 17px;
@@ -627,7 +625,7 @@ justify-content: space-between;
                            
 .explorer {
     margin: auto;
-    width: 70%;
+    width: 35%;
                            
 }
                            
@@ -716,7 +714,8 @@ justify-content: space-between;
     
     
     .presentation__restaurant {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         background-color: #f1f1f1;
         
     }
@@ -727,7 +726,7 @@ justify-content: space-between;
     
     }
     .menu__restaurant{
-        width: auto;
+        width: 45%;
         height: 250px;
         margin: 0 20px 20px;
         border-radius: 15px;
@@ -747,7 +746,7 @@ justify-content: space-between;
         color: #1b5a4a;
         position: absolute;
         text-align: center;
-        margin: 10px 80%;
+        margin: 10px 35%;
         padding: 8px;
         font-size: 14px;
         font-weight: bold;
@@ -913,7 +912,7 @@ justify-content: space-between;
         position:relative;
         background-color: #f5f5f5;
         border-radius: 45px 45px 0 0;
-        margin-top: -50px;
+        margin-top: -200px;
     }
     
     .container__entrees{
@@ -1039,7 +1038,7 @@ justify-content: space-between;
         text-decoration: none;
         color: white;
         padding: 10px;
-        margin: 0 30%;
+        margin: 0 10%;
     }
 
 
