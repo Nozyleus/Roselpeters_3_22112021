@@ -123,6 +123,9 @@ body {
             justify-content: center;
     margin: 20px;
   }
+  .logo {
+    width: 60%;
+  }
   section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,6 +376,9 @@ body {
   }
   .img__fiche__resto {
     width: 100%;
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .fa-arrow-left {
     font-size: 20px;
@@ -415,7 +421,7 @@ body {
   .card__restaurant {
     position: relative;
     background-color: #f5f5f5;
-    border-radius: 45px 45px 0 0;
+    border-radius: 25px 25px 0 0;
     margin-top: -50px;
   }
   .container__entrees {
@@ -499,6 +505,9 @@ body {
   .price {
     font-weight: bold;
   }
+  .container__coeur {
+    overflow: hidden;
+  }
   .circle {
     display: -ms-grid;
     display: grid;
@@ -512,9 +521,6 @@ body {
     transition: 0.5s;
     background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #99E2D0));
     background: linear-gradient(to left, transparent 50%, #99E2D0 50%);
-  }
-  .container__coeur {
-    overflow: hidden;
   }
   .descri__plat:hover .circle {
     margin-right: -50px;
@@ -831,6 +837,9 @@ body {
   }
   .img__fiche__resto {
     width: 100%;
+    max-height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .fa-arrow-left {
     font-size: 20px;
@@ -873,7 +882,7 @@ body {
   .card__restaurant {
     position: relative;
     background-color: #f5f5f5;
-    border-radius: 45px 45px 0 0;
+    border-radius: 25px 25px 0 0;
     margin-top: -200px;
   }
   .container__entrees {
@@ -1265,7 +1274,6 @@ body {
        object-fit: cover;
   }
   .card__restaurant {
-    background-image: url(https://previews.123rf.com/images/udra/udra1411/udra141100010/33314667-ustensiles-de-cuisine-en-bois-sur-une-planche-%C3%A0-d%C3%A9couper-la-nourriture-abstrait.jpg?fj=1);
     border-radius: 10px 10px 0 0;
     position: relative;
     background-color: #f5f5f5;
@@ -1323,13 +1331,10 @@ body {
     margin: 0 400px;
   }
   .title__menu {
-    font-size: 18px;
-    padding: 10px 35px;
-    border-radius: 25px;
-    width: 35%;
-    color: #eeeee6;
-    background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
-    background: linear-gradient(to top left, #9356dc, #ff79da);
+    font-size: 20px;
+    padding: 10px 0;
+    width: 10%;
+    border-bottom: 3px solid #99E2D0;
   }
   .descri__plat {
     display: -webkit-box;
