@@ -508,7 +508,9 @@ section {
 
 .acc{
     font-size: 14px;
-    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 
@@ -976,7 +978,9 @@ justify-content: center;
     
     .acc{
         font-size: 14px;
-        
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
     
     
@@ -1389,7 +1393,9 @@ justify-content: center;
 
 .acc{
     font-size: 15px;
-    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 
