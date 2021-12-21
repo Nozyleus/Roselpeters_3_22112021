@@ -13,7 +13,7 @@ body {
 
 /*LOADER*/
 .container_loader {
-  background-color: rgba(202, 144, 179, 0.739);
+  background-color: rgba(246, 180, 220, 0.883);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -45,8 +45,8 @@ body {
 }
 
 #loader {
-  -webkit-animation: spin 3s ease;
-          animation: spin 3s ease;
+  -webkit-animation: spin 3.5s ease;
+          animation: spin 3.5s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   position: fixed;
@@ -67,8 +67,8 @@ body {
 
 @-webkit-keyframes spin {
   99% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(390deg);
+            transform: rotate(390deg);
     opacity: 1;
   }
   100% {
@@ -78,8 +78,8 @@ body {
 
 @keyframes spin {
   99% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(390deg);
+            transform: rotate(390deg);
     opacity: 1;
   }
   100% {
@@ -89,19 +89,25 @@ body {
 
 .fa-carrot {
   color: #ff79da;
-  font-size: 55px;
+  font-size: 65px;
   margin: 20px;
+  -webkit-filter: drop-shadow(0 0.5vw 0.1vw white) drop-shadow(0 0.5vw 0.1vw #4b3e44);
+          filter: drop-shadow(0 0.5vw 0.1vw white) drop-shadow(0 0.5vw 0.1vw #4b3e44);
 }
 
 .fa-lemon {
   color: #9356dc;
-  font-size: 55px;
+  font-size: 45px;
+  -webkit-filter: drop-shadow(0 0.5vw 0.1vw white) drop-shadow(0 0.5vw 0.1vw #4b3e44);
+          filter: drop-shadow(0 0.5vw 0.1vw white) drop-shadow(0 0.5vw 0.1vw #4b3e44);
 }
 
 .fa-pepper-hot {
   color: #99E2D0;
-  font-size: 55px;
+  font-size: 65px;
   margin: 20px;
+  -webkit-filter: drop-shadow(0 0.5vw 0.1vw white) drop-shadow(0 0.5vw 0.1vw #4b3e44);
+          filter: drop-shadow(0 0.5vw 0.1vw white) drop-shadow(0 0.5vw 0.1vw #4b3e44);
 }
 
 @media screen and (max-width: 450px) {
@@ -261,7 +267,7 @@ body {
     color: #1b5a4a;
     position: absolute;
     text-align: center;
-    margin: 10px 250px;
+    margin: 10px 65%;
     padding: 8px;
     font-size: 14px;
     font-weight: bold;
@@ -293,7 +299,7 @@ body {
   }
   .rating {
     position: relative;
-    margin: -35px 280px;
+    margin: -35px 90%;
   }
   .far {
     font-size: 22px;
@@ -376,7 +382,7 @@ body {
     font-size: 27px;
     font-family: shrikhand;
     font-weight: lighter;
-    margin: 0 20px;
+    margin: 0 5%;
     padding: 40px 0;
   }
   .container__heart {
@@ -560,7 +566,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 451px) and (max-width: 1200px) {
   .head {
     border-bottom: solid 2px #acacac;
   }
@@ -692,7 +698,7 @@ body {
     background-color: #f1f1f1;
   }
   .title__restaurants {
-    padding: 30px 350px;
+    padding: 30px 40%;
     font-size: 1.4em;
   }
   .menu__restaurant {
@@ -717,7 +723,7 @@ body {
     color: #1b5a4a;
     position: absolute;
     text-align: center;
-    margin: 10px 250px;
+    margin: 10px 80%;
     padding: 8px;
     font-size: 14px;
     font-weight: bold;
@@ -749,7 +755,7 @@ body {
   }
   .rating {
     position: relative;
-    margin: -35px 280px;
+    margin: -35px 90%;
   }
   .far {
     font-size: 22px;
@@ -832,7 +838,7 @@ body {
     font-size: 27px;
     font-family: shrikhand;
     font-weight: lighter;
-    margin: 0 300px;
+    margin: 0 3%;
     padding: 40px 0;
   }
   .container__heart {
@@ -998,7 +1004,7 @@ body {
   }
   .container_commande {
     padding: 5px 150px;
-    margin: 30px 215px;
+    margin: 30px 25%;
     width: 50%;
     background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
     background: linear-gradient(to top left, #9356dc, #ff79da);
@@ -1012,7 +1018,7 @@ body {
     text-decoration: none;
     color: white;
     padding: 10px;
-    margin: 0 20px;
+    margin: 0 30%;
   }
 }
 

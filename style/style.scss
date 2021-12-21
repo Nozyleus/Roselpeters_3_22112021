@@ -14,7 +14,7 @@ body {
   
                                              /*LOADER*/
 .container_loader {
-    background-color: rgba(202, 144, 179, 0.739);
+    background-color: rgba(246, 180, 220, 0.883);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -35,7 +35,7 @@ body {
 }
 
 #loader {
-    animation: spin 3s ease ;
+    animation: spin 3.5s ease ;
     animation-fill-mode: forwards;
     position:fixed;
     z-index: 1;
@@ -50,7 +50,7 @@ body {
 
 @keyframes spin {
     99%{
-        transform: rotate(360deg);
+        transform: rotate(390deg);
         opacity: 1;
     }
     100%{
@@ -61,24 +61,46 @@ body {
 
 .fa-carrot {
     color: $pinkcolor;
-    font-size: 55px;
+    font-size: 65px;
     margin: 20px;
+    filter: 
+    drop-shadow(
+        0 0.5vw 0.10vw  rgb(255, 255, 255)
+    ) drop-shadow(
+        0 0.5vw 0.10vw rgb(75, 62, 68)
+    );
     
 }
 
 .fa-lemon {
     color: $purplecolor;
-    font-size: 55px;
+    font-size: 45px;
+    filter: 
+    drop-shadow(
+        0 0.5vw 0.10vw  rgb(255, 255, 255)
+    ) drop-shadow(
+        0 0.5vw 0.10vw rgb(75, 62, 68)
+    );
+    
 }
 
 .fa-pepper-hot {
     color: $greencolor;
-    font-size: 55px;
+    font-size: 65px;
     margin: 20px;
+    filter: 
+    drop-shadow(
+        0 0.5vw 0.10vw  rgb(255, 255, 255)
+    ) drop-shadow(
+        0 0.5vw 0.10vw rgb(75, 62, 68)
+    );
+    
 }
 
+//////////////////////* smartphone*\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////////////                 \\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-@media screen and (max-width: 450px)
+                  @media screen and (max-width: 450px)
 {
 
 
@@ -256,7 +278,7 @@ section {
     color: #1b5a4a;
     position: absolute;
     text-align: center;
-    margin: 10px 250px;
+    margin: 10px 65%;
     padding: 8px;
     font-size: 14px;
     font-weight: bold;
@@ -285,7 +307,7 @@ section {
 
 .rating {
     position: relative;
-    margin: -35px 280px;
+    margin: -35px 90%;
 }
 
 .far {
@@ -389,7 +411,7 @@ section {
     font-size: 27px;
     font-family: shrikhand;
     font-weight: lighter;
-    margin: 0 20px ;
+    margin: 0 5% ;
     padding:40px 0;
 }
 
@@ -554,7 +576,7 @@ section {
 
                    //////////////////*TAblette*/////////////////
 ////////////////////                                            /////////////////////////
-                     @media screen and (max-width: 1200px){
+                     @media screen and (min-width: 451px) and(max-width: 1200px){
 
 .head {
     border-bottom: solid 2px rgb(172, 172, 172);
@@ -700,7 +722,7 @@ justify-content: space-between;
     }
     
     .title__restaurants{
-        padding: 30px 350px ;
+        padding: 30px 40% ;
         font-size: 1.4em;
     
     }
@@ -725,7 +747,7 @@ justify-content: space-between;
         color: #1b5a4a;
         position: absolute;
         text-align: center;
-        margin: 10px 250px;
+        margin: 10px 80%;
         padding: 8px;
         font-size: 14px;
         font-weight: bold;
@@ -754,7 +776,7 @@ justify-content: space-between;
     
     .rating {
         position: relative;
-        margin: -35px 280px;
+        margin: -35px 90%;
     }
     
     .far {
@@ -858,7 +880,7 @@ justify-content: space-between;
         font-size: 27px;
         font-family: shrikhand;
         font-weight: lighter;
-        margin: 0 300px ;
+        margin: 0 3% ;
         padding:40px 0;
     }
     
@@ -1004,7 +1026,7 @@ justify-content: space-between;
     }
     .container_commande {
         padding: 5px 150px;
-        margin: 30px 215px;
+        margin: 30px 25%;
         width: 50%;
         background: linear-gradient(to top left, $purplecolor ,$pinkcolor );
         border-radius: 50px;
@@ -1017,7 +1039,7 @@ justify-content: space-between;
         text-decoration: none;
         color: white;
         padding: 10px;
-        margin: 0 20px;
+        margin: 0 30%;
     }
 
 
