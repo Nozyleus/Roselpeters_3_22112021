@@ -2,3 +2,11 @@ $purplecolor:  #9356dc;
 $pinkcolor: #ff79da;
 $greencolor: #99E2D0;
 $gradient: (to top left,#bb95e9,#f89bde  );
+@keyframes ok{
+    0%{
+        transform: rotate(290deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+};

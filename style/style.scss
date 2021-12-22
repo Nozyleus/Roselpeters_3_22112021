@@ -534,7 +534,7 @@ section {
     width: 40px;
     margin-right: -40px;
     border-radius: 0 25px 25px 0;
-    transition: 0.5s;
+    transition: all .4s ease-in-out;
     background: linear-gradient(to left, transparent 50%, $greencolor 50%);
 }
 .descri__plat:hover{
@@ -542,16 +542,8 @@ section {
         margin-right: -50px;
         width: 100px;
     }
-    .fa-check-circle {
-        animation: ok 0.5s ease ;
-        @keyframes ok{
-            0%{
-                transform: rotate(90deg);
-            }
-            100%{
-                transform: rotate(0deg);
-            }
-        }
+    .fa-check-circle {  
+        animation: ok 1s  ease-in-out;
     }
 }
 
@@ -559,10 +551,13 @@ section {
 .fa-check-circle {
     color: white;
     font-size: 20px;
-    margin: 15px;
+    margin: 10px;
+    padding: 0;
+    width: 20%;
    
     
 }
+
 .container_commande {
     padding: 5px 20px;
     margin: 30px 100px;
@@ -1015,24 +1010,19 @@ justify-content: center;
             margin-right: -50px;
             width: 100px;
         }
-        .fa-check-circle {
-            animation: ok 0.5s ease ;
-        @keyframes ok{
-            0%{
-                transform: rotate(90deg);
-            }
-            100%{
-                transform: rotate(0deg);
-            }
-            
+        .fa-check-circle {  
+            animation: ok 1s  ease-in-out;
         }
     }
-    }
+    
+    
     .fa-check-circle {
         color: white;
         font-size: 20px;
-        margin: 15px;
-        
+        margin: 10px;
+        padding: 0;
+        width: 20%;
+       
         
     }
     .container_commande {
@@ -1423,28 +1413,24 @@ justify-content: center;
 .container__coeur {
     overflow: hidden;
 }
+
 .descri__plat:hover{
     .circle{
         margin-right: -50px;
         width: 100px;
     }
-    .fa-check-circle {
-        animation: ok 0.5s ease ;
-    @keyframes ok{
-        0%{
-            transform: rotate(90deg);
-        }
-        100%{
-            transform: rotate(0deg);
-        }
-        
+    .fa-check-circle {  
+        animation: ok 1s  ease-in-out;
     }
 }
-}
+
+
 .fa-check-circle {
     color: white;
     font-size: 20px;
-    margin: 15px;
+    margin: 10px;
+    padding: 0;
+    width: 20%;
    
     
 }
