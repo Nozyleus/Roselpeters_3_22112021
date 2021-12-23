@@ -473,7 +473,7 @@ section {
     width: 100%;
     margin: 10px 0 ;
     overflow: hidden;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-delay: 0.5s;
     animation-name: plat;
     @keyframes plat {
@@ -484,7 +484,7 @@ section {
         }
       
         to {
-          margin-top: 1%;
+          margin-top: 3%;
           width: 100%;
           opacity: 1;
         }
@@ -653,7 +653,7 @@ justify-content: center;
                            
                            
                            
-                                                         /*fonctionnement*/
+          /////////*fonctionnement*\\\\\\\\\\
                            
                            
                            
@@ -952,7 +952,7 @@ justify-content: center;
             }
             
             to {
-                margin-top: 1%;
+                margin-top: 3%;
                 width: 100%;
                 opacity: 1;
             }
@@ -1360,7 +1360,7 @@ justify-content: center;
         }
       
         to {
-          margin-top: 1%;
+          margin-top: 3%;
           width: 100%;
           opacity: 1;
         }
